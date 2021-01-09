@@ -22,7 +22,17 @@ const Main = () => {
         <embed src={url} type="application/pdf" />
       </object>
       <h1>object and embed</h1>
-      <object data={url} type="application/pdf"></object>
+      <object data={url} type="application/pdf">
+        <p>
+          It appears you don't have Adobe Reader or PDF support in this web
+          browser. <a href={url}>Click here to download the PDF</a>. Or{" "}
+          <a href="http://get.adobe.com/reader/" target="_blank">
+            click here to install Adobe Reader
+          </a>
+          .
+        </p>
+        <embed src={url} type="application/pdf" />
+      </object>
       <h1>embed</h1>
       <embed width="500" height="375" src={url} type="application/pdf"></embed>
       <h1>google drive</h1>
