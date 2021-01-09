@@ -8,6 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, "./dist"),
     filename: "build.js",
   },
+  target: ["web", "es5"],
   module: {
     rules: [
       {
@@ -17,7 +18,6 @@ module.exports = {
             loader: "ts-loader",
           },
         ],
-        exclude: /node_modules/,
       },
     ],
   },
