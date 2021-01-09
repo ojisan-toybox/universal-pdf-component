@@ -3,7 +3,9 @@ import { Document, Page, pdfjs } from "react-pdf";
 import { Viewer } from "@react-pdf-viewer/core";
 
 // https://github.com/wojtekmaj/react-pdf/issues/321
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+if (pdfjs) {
+  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+}
 
 // import "@react-pdf-viewer/core/lib/styles/index.css";
 
