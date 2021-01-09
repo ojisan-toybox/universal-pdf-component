@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <div>
       <h1>iframe</h1>
-      <iframe src={url} style="width: 100%; height: 100%;" scrolling="no">
+      <iframe src={url} scrolling="no">
         <p>It appears your web browser doesn't support iframes.</p>
       </iframe>
       <h1>object</h1>
@@ -21,6 +21,8 @@ const Main = () => {
         </p>
         <embed src={url} type="application/pdf" />
       </object>
+      <h1>object and embed</h1>
+      <object data={url} type="application/pdf"></object>
       <h1>embed</h1>
       <embed width="500" height="375" src={url} type="application/pdf"></embed>
       <h1>google drive</h1>
