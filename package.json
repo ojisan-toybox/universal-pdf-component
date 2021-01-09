@@ -4,7 +4,7 @@
   "description": "IE/SPでもPDFを埋め込めるか実験",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack && cp src/example.pdf dist/",
     "dev": "webpack serve --open"
   },
   "repository": {
