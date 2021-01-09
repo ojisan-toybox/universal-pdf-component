@@ -1,7 +1,7 @@
 import { h, render } from "preact";
 
 const url =
-  "https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf";
+  "https://ojisan-toybox.github.io/universal-pdf-component/example.pdf";
 const Main = () => {
   return (
     <div>
