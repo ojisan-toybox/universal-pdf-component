@@ -2,6 +2,7 @@ import { h, render } from "preact";
 import { Document, Page, pdfjs } from "react-pdf";
 import { Viewer } from "@react-pdf-viewer/core";
 
+// https://github.com/wojtekmaj/react-pdf/issues/321
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 // import "@react-pdf-viewer/core/lib/styles/index.css";
@@ -48,7 +49,6 @@ viewer?embedded=true&url=${url}`}
         width="500"
         height="375"
       ></embed>
-      <h1>pdfjs</h1>
       <h1>react-pdf</h1>
       <Document file={url}>
         <Page pageNumber={1} />
