@@ -1,11 +1,13 @@
 import { h, render } from "preact";
-// import { Document, Page, pdfjs } from "react-pdf";
-// import { Viewer } from "@react-pdf-viewer/core";
+import { Document, Page, pdfjs } from "react-pdf";
+import { Viewer } from "@react-pdf-viewer/core";
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 // https://github.com/wojtekmaj/react-pdf/issues/321
-// if (pdfjs) {
-//   pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-// }
+if (pdfjs) {
+  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+}
 
 // import "@react-pdf-viewer/core/lib/styles/index.css";
 
@@ -51,12 +53,12 @@ viewer?embedded=true&url=${url}`}
         width="500"
         height="375"
       ></embed>
-      {/* <h1>react-pdf</h1>
+      <h1>react-pdf</h1>
       <Document file={url}>
         <Page pageNumber={1} />
       </Document>
       <h1>react-pd-viewer</h1>
-      <Viewer fileUrl={url} /> */}
+      <Viewer fileUrl={url} />
     </div>
   );
 };

@@ -28,7 +28,9 @@
   },
   "dependencies": {
     "@react-pdf-viewer/core": "^2.3.0",
+    "core-js": "^3.8.2",
     "preact": "^10.5.9",
-    "react-pdf": "^5.1.0"
+    "react-pdf": "^5.1.0",
+    "regenerator-runtime": "^0.13.7"
   }
 }
