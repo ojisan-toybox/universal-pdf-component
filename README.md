@@ -1,2 +1,9 @@
 # universal-pdf-component
-IE/SPでもPDFを埋め込めるか実験
+
+IE/SP でも PDF を埋め込めるか実験
+
+## dev
+
+```
+npx webpack
+```
