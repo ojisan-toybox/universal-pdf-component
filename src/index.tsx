@@ -1,6 +1,6 @@
 import { h, render } from "preact";
 const url =
-  "https://ojisan-toybox.github.io/universal-pdf-component/example.pdf";
+  "https://ojisan-toybox.github.io/universal-pdf-component/example.pdf#view=FitV&pagemode=none&toolbar=0";
 const Main = () => {
   return (
     <div>
