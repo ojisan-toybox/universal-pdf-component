@@ -4,6 +4,7 @@ const url =
 const Main = () => {
   return (
     <div>
+      <p>link: {url}</p>
       <h1>iframe</h1>
       <iframe src={url} scrolling="no">
         <p>It appears your web browser doesn't support iframes.</p>
