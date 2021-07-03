@@ -37,8 +37,13 @@ const Main = () => {
       <embed width="500" height="375" src={url} type="application/pdf"></embed>
       <h1>google drive</h1>
       <embed
-        src={`https://drive.google.com/viewerng/
-viewer?embedded=true&url=${url}`}
+        src={`https://drive.google.com/viewerng/viewer?embedded=true&url=${url}`}
+        width="500"
+        height="375"
+      ></embed>
+      <h1>PDFJS</h1>
+      <embed
+        src={`https://ojisan-toybox.github.io/pdfjs-file-viewer/?file=https://ojisan-toybox.github.io/universal-pdf-component/example.pdf`}
         width="500"
         height="375"
       ></embed>
