@@ -47,6 +47,12 @@ const Main = () => {
         width="500"
         height="375"
       ></embed>
+      <h1>OLD PDFJS</h1>
+      <embed
+        src={`https://ojisan-toybox.github.io/pdfjs-file-old-viewer/?file=https://ojisan-toybox.github.io/universal-pdf-component/example.pdf`}
+        width="500"
+        height="375"
+      ></embed>
     </div>
   );
 };
