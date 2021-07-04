@@ -53,6 +53,12 @@ const Main = () => {
         width="500"
         height="375"
       ></embed>
+      <h1>IE 11 PDFJS</h1>
+      <embed
+        src={`https://ojisan-toybox.github.io/pdfjs-file-ie11-viewer/?file=https://ojisan-toybox.github.io/universal-pdf-component/example.pdf`}
+        width="500"
+        height="375"
+      ></embed>
     </div>
   );
 };
